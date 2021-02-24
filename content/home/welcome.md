@@ -6,15 +6,25 @@
 widget: hero  # See https://wowchemy.com/docs/page-builder/
 headless: true  # This file represents a page section.
 weight: 10  # Order that this section will appear.
-title: "Wowchemy Research Group"
-subtitle: ""
-hero_media: welcome.jpg
+title: "Chair of Being Alive"
+subtitle: "subtitle if needed."
+#hero_media: JiS018cantarell-3-72.jpg
 design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: '1'
+
+  background:
+    image: FS21_Cartographies-of-living-systems_01.jpg
+    image_darken: 0.8
+    image_parallax: false
+    image_size: center
+    image_position: center
+    text_color_light: false
 advanced:
-  css_style:
+  css_style: "height:500px"
   css_class:
 ---
 
-The Wowchemy Research Group has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+The Chair of Being Alive was founded in 20xx at ETH Zurich.
+
+Text TBD.
