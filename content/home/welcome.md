@@ -27,4 +27,5 @@ advanced:
 
 The Chair of Being Alive was founded in 20xx at ETH Zurich.
 
-Text TBD.
+Please let me know what to put here.
+
