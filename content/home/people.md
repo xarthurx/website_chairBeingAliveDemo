@@ -16,7 +16,6 @@ content:
   - Scientific Assistant
   - Grad Students
   - Administration
-  - Visitors
   - Alumni
 design:
   show_interests: false
