@@ -174,7 +174,6 @@
         <h1>SAY HI !</h1>
       </div>
 
-
       <div class="col-md-12 mb-md-0 mb-5">
         <form id="contact-form" name="contact-form" data-netlify="true" method="POST">
 
@@ -189,7 +188,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="md-form mb-2 form-input">
-                <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email">
               </div>
             </div>
           </div>
@@ -197,21 +196,21 @@
           <div class="row">
             <div class="col-md-12">
               <div class="md-form mb-4 form-input">
-                <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea" placeholder="Message"></textarea>
+                <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"
+                  placeholder="Message"></textarea>
               </div>
 
             </div>
           </div>
-          <!--Grid row-->
           <div class="text-center text-md-left">
-            <a class="btn btn-dark" type="submit">Send</a>
+            <p>
+              <button class="btn btn-dark" type="submit">Send</button>
+            </p>
           </div>
-          <div class="status"></div>
-
-          </form>
-        </div>
-
+        </form>
       </div>
+
+    </div>
 
     <hr class="featurette-divider">
 
@@ -232,38 +231,6 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <!-- <script>
-
-    function validateForm() {
-      //get input field values data to be sent to server
-      document.getElementById('status').innerHTML = "Sending...";
-      formData = {
-        'name': $('input[name=name]').val(),
-        'email': $('input[name=email]').val(),
-        'message': $('textarea[name=message]').val()
-      };
-
-
-      $.ajax({
-        url: "mail.php",
-        type: "POST",
-        data: formData,
-        success: function (data, textStatus, jqXHR) {
-
-          $('#status').text(data.message);
-          if (data.code) //If mail was sent successfully, reset the form.
-            $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-          $('#status').text(jqXHR);
-        }
-      });
-
-
-
-    }
-
-  </script> -->
 
 </body>
 
