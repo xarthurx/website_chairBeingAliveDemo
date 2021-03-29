@@ -46,12 +46,12 @@ body {
   text-align: center;
 }
 
-.news .card-columns {
-  column-count: 2;
+.news .card-columns-video {
+  column-count: 1;
 }
 
-.people .card-columns{
-  column-count: 4;
+.news .card-columns {
+  column-count: 2;
 }
 
 
