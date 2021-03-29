@@ -73,6 +73,11 @@ body {
 }
 /* rtl:end:ignore */
 
+.team .blockquote {
+  font-size: 0.9em;
+  margin: 1.2em;
+  font-weight: 600;
+}
 
 /* Featurettes
 ------------------------- */
