@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
   <!-- Custom styles for this template -->
   <link href="carousel.css" rel="stylesheet">
 </head>
@@ -38,10 +41,24 @@
       </div>
     </div>
 
+    <hr class="featurette-divider">
+    <!-- Manifesto -->
+    <!-- ====================== -->
+    <div class="container">
+      <div class="heading">
+        <h1>MANIFESTO</h1>
+      </div>
+      <div>
+        <a class="image-popup" href="assets/manifesto-01.jpg">
+          <img src="assets/manifesto-01.jpg" class="rounded img-fluid d-block">
+        </a>
+      </div>
+    </div>
 
     <hr class="featurette-divider">
 
     <!-- News -->
+    <!-- ====================== -->
     <div class="container news">
       <div class="heading">
         <h1>UPDATES</h1>
@@ -406,6 +423,8 @@
 
 
     <hr class="featurette-divider">
+    <!-- CONTACT -->
+    <!-- ====================== -->
 
     <div class="container">
       <div class="heading">
@@ -462,6 +481,8 @@
   </main>
 
   <!-- SCRIPTS -->
+
+  <script src="https://kit.fontawesome.com/ecb58e6040.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -469,7 +490,27 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://kit.fontawesome.com/ecb58e6040.js" crossorigin="anonymous"></script>
+
+  <!-- Magnific Popup core JS file -->
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.image-popup').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        fixedContentPos: true,
+        mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+        image: {
+          verticalFit: true
+        },
+        zoom: {
+          enabled: true,
+          duration: 300 // don't foget to change the duration also in CSS
+        }
+      });
+    });
+  </script>
 
 </body>
 
